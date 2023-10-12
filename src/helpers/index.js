@@ -5,3 +5,32 @@ export const generarId = () => {
 
     return random + fecha
 }
+
+export const formatearFecha = (fecha) => {
+    const fechaNueva = new Date(fecha)
+    const opciones = {
+        year: 'numeric',
+        month: 'long',
+        day: '2-digit',
+      }
+    return fechaNueva.toLocaleDateString('es-ES', opciones)
+}
+
+
+// export const formatearFecha = fecha => {
+//     const fechaNueva = new Date(fecha);
+//     const hora = fechaNueva.getHours()
+//     const minuto = fechaNueva.getMinutes()
+    
+//     const opciones = {
+//         year: 'numeric',
+//         month: 'long',
+//         day: '2-digit',
+//     }
+ 
+//     const fechaDeHoy = fechaNueva.toLocaleDateString('es-ES', opciones)
+    
+//     return fechaDeHoy + ' ' + '-' + ' ' + hora + ':' + minuto + 'hs';
+// }
+ 
+// // Agregado el: 16 de enero de 2023 - 13:53hs 
