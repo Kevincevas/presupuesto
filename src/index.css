@@ -207,7 +207,7 @@ header h1 {
 }
 .contenido-presupuesto p.negativo,
 .contenido-presupuesto p.negativo span {
-    color: red;
+    color: #DC2626;
 }
 .contenido-presupuesto span {
     font-weight: 900;
@@ -351,10 +351,12 @@ main {
 }
 .modal .cerrar-modal img {
     width: 100%;
+    position: relative;
+    z-index: 100;
 }
 
 .modal .formulario {
-    max-width: 80rem;
+    max-width: 80%;
     width: 40rem;
     transition-property: all;
     transition-duration: 300ms;
